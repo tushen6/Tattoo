@@ -27,6 +27,24 @@
         }
     ],
     "vod": [
+    {
+      "name": "瓜子web",
+      "version": 2,
+      "webSite": "https://api.zaqohu.com",
+      "instance": "gzys20240822",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/guazi.js",
+      "type": 100
+    },
+    {
+            "name": "🍉瓜子丨影视",
+            "api": "http://uz.xn--z7x900a.com/js/gzapp.js",
+            "codeID": "ra5Z3wtXKshzSMK2",
+            "instance": "gzapp20241001",
+            "webSite": "https://api.9cec79d.com",
+            "remark": "",
+            "version": "2",
+            "type": 100
+        }
         {
             "name": "玩偶 | 4K",
             "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/玩偶.js",
@@ -152,122 +170,38 @@
             "type": 100
         },
         {
-            "name": "哔嘀影视",
-            "api": "http://uz.xn--z7x900a.com/js/biliys.js",
-            "instance": "yjys20240824",
-            "webSite": "https://www.xlys01.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
+      "name": "爱动漫",
+      "version": 1,
+      "webSite": "https://anime.girigirilove.com",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/adm.js",
+      "type": 101
+    },
         {
-            "name": "💫蛋蛋剧",
-            "api": "http://uz.xn--z7x900a.com/js/dandanju.js",
-            "instance": "dandanju20240704",
-            "webSite": "https://www.dandanju.tv",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
+      "name": "欧乐影视",
+      "version": 2,
+      "webSite": "https://www.olevod.tv",
+      "instance": "olevod20240620",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/ouleys.js",
+      "type": 100
+    },
         {
-            "name": "⛅️天天影視",
-            "api": "http://uz.xn--z7x900a.com/js/tiantian.js",
-            "instance": "tiantian20240629",
-            "webSite": "http://op.ysdqjs.cn",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
+      "name": "南风短剧",
+      "version": 1,
+      "webSite": "https://www.nanf.cc",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/nfdj.js",
+      "type": 101
+    },
         {
-            "name": "🥇金牌影视",
-            "api": "http://uz.xn--z7x900a.com/js/jpyy.js",
-            "instance": "jpyy20240716",
-            "webSite": "https://www.ghw9zwp5.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "🙀4k影视",
-            "api": "http://uz.xn--z7x900a.com/js/4kav.js",
-            "instance": "www4kav20240705",
-            "webSite": "https://4k-av.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "🔥骚火电影",
-            "api": "http://uz.xn--z7x900a.com/js/saohuo.js",
-            "instance": "saohuo20240623",
-            "webSite": "https://saohuo.tv",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "🍉瓜子影视",
-            "api": "http://uz.xn--z7x900a.com/js/gzapp.js",
-            "codeID": "ra5Z3wtXKshzSMK2",
-            "instance": "gzapp20241001",
-            "webSite": "https://api.9cec79d.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "🦌奇优影院",
-            "api": "http://uz.xn--z7x900a.com/js/qiyou.js",
-            "instance": "qiyou20240904",
-            "webSite": "http://www.qiyoudy4.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "🦄韩剧看看",
-            "api": "http://uz.xn--z7x900a.com/js/hjkk.js",
-            "instance": "hjkk20240624",
-            "webSite": "https://www.hanjukankan.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "🛜在线之家",
-            "api": "http://uz.xn--z7x900a.com/js/zxzj.js",
-            "instance": "zxzj20240620",
-            "webSite": "https://www.zxzja.com",
-            "remark": "频繁搜索会触发风控，建议间隔十秒以上",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "🧲两个BT",
-            "api": "http://uz.xn--z7x900a.com/js/bttwo.js",
-            "instance": "bttwo20240628",
-            "webSite": "https://www.bttwoo.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "👀短剧天堂",
-            "api": "http://uz.xn--z7x900a.com/js/duanjutt.js",
-            "instance": "duanjutt20240922",
-            "webSite": "https://duanjutt.tv",
-            "remark": "搜索间隔不能小于十秒",
-            "version": "2",
-            "type": 100
-        },
-        {
-            "name": "👂🏻老白听书",
-            "api": "http://uz.xn--z7x900a.com/js/laobai.js",
-            "instance": "laobai20240831",
-            "webSite": "https://apk-lb-json.fodexin.com",
-            "remark": "",
-            "version": "2",
-            "type": 100
-        }
+      "api": "https://json.heimuer.xyz/api.php/provide/vod/",
+      "name": "🐝黑木耳",
+      "type": 0
+    },
+    {
+      "api": "https://cjhwba.com/api.php/provide/vod/",
+      "name": "🐝华为吧",
+      "type": 0
+    }
+        
+        
     ]
 }
