@@ -1,5 +1,5 @@
 const appConfig = {
-    _webSite: 'http://feimaoai.site',
+    _webSite: 'http://cj.jiexi.news/',
     /**
      * 网站主页，uz 调用每个函数前都会进行赋值操作
      * 如果不想被改变 请自定义一个变量
@@ -34,37 +34,23 @@ async function getClassList(args) {
     backData.data = [
         {
             type_id: '1',
-            type_name: '蜡笔电影',
+            type_name: '百家电影',
             hasSubclass: false,
         },
         {
             type_id: '2',
-            type_name: '蜡笔剧集',
+            type_name: '百家剧集',
             hasSubclass: false,
         },
         {
+        
             type_id: '3',
-            type_name: '蜡笔动漫',
+            type_name: '百家综艺',
             hasSubclass: false,
         },
         {
             type_id: '4',
-            type_name: '蜡笔综艺',
-            hasSubclass: false,
-        },
-        {
-            type_id: '24',
-            type_name: '肥猫4K',
-            hasSubclass: false,
-        },
-        {
-            type_id: '29',
-            type_name: '臻彩4K',
-            hasSubclass: false,
-        },
-        {
-            type_id: '5',
-            type_name: '蜡笔短剧',
+            type_name: '百家动漫',
             hasSubclass: false,
         },
     ]
@@ -207,7 +193,6 @@ async function searchVideo(args) {
             appConfig.webSite
         )}/index.php/vod/search/page/${args.page}/wd/${args.searchWord}.html`
         let repData = await req(searchUrl)
-
         const $ = cheerio.load(repData.data)
         let items = $('.module-search-item')
 

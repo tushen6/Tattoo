@@ -1,5 +1,5 @@
 const appConfig = {
-    _webSite: 'http://feimaoai.site',
+    _webSite: 'https://www.wogg.one',
     /**
      * 网站主页，uz 调用每个函数前都会进行赋值操作
      * 如果不想被改变 请自定义一个变量
@@ -31,40 +31,29 @@ const appConfig = {
  */
 async function getClassList(args) {
     var backData = new RepVideoClassList()
-    backData.data = [
-        {
+    backData.data = [{
             type_id: '1',
-            type_name: '蜡笔电影',
+            type_name: '玩偶电影',
             hasSubclass: false,
         },
         {
             type_id: '2',
-            type_name: '蜡笔剧集',
+            type_name: '玩偶剧集',
             hasSubclass: false,
         },
         {
             type_id: '3',
-            type_name: '蜡笔动漫',
+            type_name: '玩偶动漫',
             hasSubclass: false,
         },
         {
             type_id: '4',
-            type_name: '蜡笔综艺',
+            type_name: '玩偶综艺',
             hasSubclass: false,
         },
         {
-            type_id: '24',
-            type_name: '肥猫4K',
-            hasSubclass: false,
-        },
-        {
-            type_id: '29',
-            type_name: '臻彩4K',
-            hasSubclass: false,
-        },
-        {
-            type_id: '5',
-            type_name: '蜡笔短剧',
+            type_id: '44',
+            type_name: '臻彩视界',
             hasSubclass: false,
         },
     ]
@@ -78,6 +67,7 @@ async function getSubclassVideoList(args) {
     var backData = new RepVideoList()
     return JSON.stringify(backData)
 }
+
 /**
  * 获取分类视频列表
  * @param {UZArgs} args
@@ -87,10 +77,11 @@ async function getVideoList(args) {
     var backData = new RepVideoList()
     let url =
         UZUtils.removeTrailingSlash(appConfig.webSite) +
-        `/index.php/vod/show/id/${args.url}/page/${args.page}.html`
+        `/vodshow/${args.url}--------${args.page}---.html`
     try {
         const pro = await req(url)
         backData.error = pro.error
+        checkVerify(url, pro.data)
         let videos = []
         if (pro.data) {
             const $ = cheerio.load(pro.data)
@@ -105,10 +96,6 @@ async function getVideoList(args) {
                     .find('.module-item-pic img')
                     .attr('data-src')
                 videoDet.vod_remarks = $(e).find('.module-item-text').text()
-                videoDet.vod_year = $(e)
-                    .find('.module-item-caption span')
-                    .first()
-                    .text()
                 videos.push(videoDet)
             })
         }
@@ -127,7 +114,7 @@ async function getVideoDetail(args) {
     try {
         let webUrl = UZUtils.removeTrailingSlash(appConfig.webSite) + args.url
         let pro = await req(webUrl)
-
+        checkVerify(webUrl, pro.data)
         backData.error = pro.error
         let proData = pro.data
         if (proData) {
@@ -154,12 +141,8 @@ async function getVideoDetail(args) {
                     .filter(Boolean) // 过滤掉 null 和空字符串
                     .join(', ') // 用逗号和空格分割
 
-                if (key.includes('剧情')) {
-                    vodDetail.vod_content = $(item)
-                        .next()
-                        .find('p')
-                        .text()
-                        .trim()
+                if (key.includes('年代')) {
+                    vodDetail.vod_year = value.trim()
                 } else if (key.includes('导演')) {
                     vodDetail.vod_director = value.trim()
                 } else if (key.includes('主演')) {
@@ -203,11 +186,15 @@ async function getVideoPlayUrl(args) {
 async function searchVideo(args) {
     var backData = new RepVideoList()
     try {
-        let searchUrl = `${UZUtils.removeTrailingSlash(
-            appConfig.webSite
-        )}/index.php/vod/search/page/${args.page}/wd/${args.searchWord}.html`
+        let searchUrl = combineUrl(
+            'vodsearch/' +
+            args.searchWord +
+            '----------' +
+            args.page +
+            '---.html'
+        )
         let repData = await req(searchUrl)
-
+        checkVerify(searchUrl, repData.data)
         const $ = cheerio.load(repData.data)
         let items = $('.module-search-item')
 
@@ -238,4 +225,15 @@ function combineUrl(url) {
         return appConfig.webSite + url
     }
     return appConfig.webSite + '/' + url
+}
+
+/**
+ * 检查是否需要验证码
+ * @param {string} webUrl
+ * @param {any} data
+ **/
+async function checkVerify(webUrl, data) {
+    if (typeof data === 'string' && data.includes('js=slider')) {
+        await goToVerify(webUrl)
+    }
 }
