@@ -1,21 +1,21 @@
 {
     "panTools": [
         {
-            "name": "Ⓜ️网盘解析工具",
-            "url": "http://uz.xn--z7x900a.com/js/配置.js",
-            "codeID": "4io9t6E8i9P9uUof",
-            "env": "天翼Cookie##用于播放天翼网盘视频&&UCCookie##用于播放UC网盘视频&&夸克Cookie##用于播放Quark网盘视频&&阿里Token32##用于播放阿里网盘视频&&阿里Token280##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称",
+            "name": "网盘解析工具",
+            "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/配置.js",
+            "env": "UCCookie##用于播放UC网盘视频&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称",
+            "version": 13,
             "type": 300
         }
     ],
     "danMu": [
         {
-            "name": "🔗弹幕",
-            "url": "http://uz.xn--z7x900a.com/js/弹幕.txt",
-            "codeID": "wMFsJrk98TmvWbYAjO4Mne3CZDRh619D",
+            "name": "弹幕",
+            "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/弹幕.txt",
+            "codeID": "RkgRA9srEAgMgLcBJ78G2wlPRKTWWiwE",
             "remark": "搜不到就算了",
-            "type": 400,
-            "version": 1
+            "version": 9,
+            "type": 400
         }
     ],
     "live": [
@@ -28,21 +28,128 @@
     ],
     "vod": [
         {
-            "name": "⚡️闪电UC",
-            "api": "http://uz.xn--z7x900a.com/js/fmuc.js",
-            "instance": "fmuc20241128",
-            "webSite": "http://1.95.79.193",
-            "remark": "UC网盘",
-            "version": "2",
+            "name": "玩偶 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/玩偶.js",
+            "webSite": "https://www.wogg.one",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "木偶 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/木偶.js",
+            "webSite": "http://123.666291.xyz/",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "多多 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/多多.js",
+            "webSite": "https://tv.yydsys.cc",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "蜡笔 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/蜡笔.js",
+            "webSite": "http://feimaoai.site",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "玩偶叔叔 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/玩偶叔叔.js",
+            "webSite": "https://woss.banye.tech:7086",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "至臻 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/至臻.js",
+            "webSite": "https://mihdr.top",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "欧歌 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/欧歌.js",
+            "webSite": "https://woog.nxog.eu.org",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "小米 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/小米.js",
+            "webSite": "http://milvdou.fun/",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "大玩偶 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/六趣.js",
+            "webSite": "https://dawo.banye.tech:7086",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "下饭 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/下饭.js",
+            "webSite": "http://www.xn--ghqy10g1w0a.xyz/",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "虎斑 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/虎斑.js",
+            "webSite": "http://43.138.242.105:9696/",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "二小 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/二小.js",
+            "webSite": "https://erxiaofn.click/",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "百家 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/百家.js",
+            "webSite": "http://cj.jiexi.news/",
+            "remark": "数据来源于网络",
+            "version": "3",
+            "type": 101
+        },
+        {
+            "name": "云盘 | 4K",
+            "codeID": "",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/云盘.js",
+            "instance": "ypzyw",
+            "webSite": "https://res.yunpan.win",
+            "remark": "数据来源于网络",
+            "version": 1,
             "type": 100
         },
         {
-            "name": "🚦蜡笔4K",
-            "api": "http://uz.xn--z7x900a.com/js/蜡笔.js",
-            "webSite": "http://feimaoai.site",
-            "remark": "夸克",
+            "name": "趣盘 | 4K",
+            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/趣盘.js",
+            "codeID": "LO5aQSJYBZLrRD1g",
+            "instance": "funletu20241124",
+            "webSite": "https://pan.funletu.com",
+            "remark": "「仅限搜索」",
             "version": "3",
-            "type": 101
+            "type": 100
         },
         {
             "name": "哔嘀影视",
