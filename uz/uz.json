@@ -27,14 +27,7 @@
         }
     ],
     "vod": [
-    {
-      "name": "瓜子web",
-      "version": 2,
-      "webSite": "https://api.zaqohu.com",
-      "instance": "gzys20240822",
-      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/guazi.js",
-      "type": 100
-    },
+   
     {
             "name": "🍉瓜子丨影视",
             "api": "http://uz.xn--z7x900a.com/js/gzapp.js",
