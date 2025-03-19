@@ -1450,7 +1450,7 @@ async function homeContent() {
 async function searchContent(keyword) {
     try {
         const encodedKeyword = encodeURIComponent(keyword);
-        const url = `https://labipan.com/index.php/vod/search.html?wd=${encodedKeyword}`;
+        const url = `http://feimao888.fun/index.php/vod/search.html?wd=${encodedKeyword}`;
         const html = await 访问网页(url);
         const items = 文本_取中间_批量(html,'<div class="module-search-item">','<div class="video-info-footer">');
         const list = items.map((item) => {
@@ -1500,7 +1500,7 @@ async function categoryContent(tid, pg = 1, extend) {
   try {
     // 解析 extend 参数
     let extendObj = extend ? JSON.parse(extend) : null;
-    let url = `https://labipan.com/index.php/vod/show/area/{area}/class/{class}/by/{by}/id/${tid}/year/{year}/page/${pg}.html`;
+    let url = `http://feimao888.fun/index.php/vod/show/area/{area}/class/{class}/by/{by}/id/${tid}/year/{year}/page/${pg}.html`;
     // 替换 URL 中的占位符
     if (extendObj) {
       for (const [key, value] of Object.entries(extendObj)) {
@@ -1556,7 +1556,7 @@ async function categoryContent(tid, pg = 1, extend) {
 
 //获取影视详情信息
 async function detailContent(ids) {
-  const url = `https://labipan.com${ids}`;
+  const url = `http://feimao888.fun${ids}`;
   try {
     //console.log(url);
     await toast('正在加载影片信息',2);

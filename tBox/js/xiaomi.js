@@ -923,7 +923,7 @@ if (downloadUrl) {
  async function searchContent(keyword) {
      try {
          const encodedKeyword = encodeURIComponent(keyword);
-         const url = `http://www.mucpan.cc/index.php/vod/search.html?wd=${encodedKeyword}`;
+         const url = `http://milvdou.fun/index.php/vod/search.html?wd=${encodedKeyword}`;
          const html = await 访问网页(url);
          const items = 文本_取中间_批量(html,'<div class="module-search-item">','<div class="video-info-footer">');
          const list = items.map((item) => {
@@ -973,7 +973,7 @@ if (downloadUrl) {
    try {
      // 解析 extend 参数
      let extendObj = extend ? JSON.parse(extend) : null;
-     let url = `http://www.mucpan.cc/index.php/vod/show/id/${tid}/page/${pg}.html`;
+     let url = `http://milvdou.fun/index.php/vod/show/id/${tid}/page/${pg}.html`;
      // 替换 URL 中的占位符
      if (extendObj) {
        for (const [key, value] of Object.entries(extendObj)) {
@@ -1026,7 +1026,7 @@ if (downloadUrl) {
  
  //获取影视详情信息
  async function detailContent(ids) {
-   const url = `http://www.mucpan.cc${ids}`;
+   const url = `http://milvdou.fun${ids}`;
    try {
      //console.log(url);
      await toast('正在加载影片信息',2);

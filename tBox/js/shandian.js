@@ -885,7 +885,7 @@ if (isQuark) {
    
    async function homeContent() {
      try {
-       const url = `http://149.88.87.18:6688/`;
+       const url = `http://1.95.79.193`;
        const html2 = await 访问网页(url);
        const html = 文本_取中间(html2, "最新影片</h2>", "</html>");
        // 使用正则表达式匹配所有的电影项
@@ -1247,7 +1247,7 @@ if (isQuark) {
    async function searchContent(keyword) {
        try {
            const encodedKeyword = encodeURIComponent(keyword);
-           const url = `http://149.88.87.18:6688/index.php/vod/search.html?wd=${encodedKeyword}`;
+           const url = `http://1.95.79.193/index.php/vod/search.html?wd=${encodedKeyword}`;
            const html = await 访问网页(url);
            const items = 文本_取中间_批量(html,'<div class="module-search-item">','<div class="video-info-footer">');
            const list = items.map((item) => {
@@ -1297,7 +1297,7 @@ if (isQuark) {
      try {
        // 解析 extend 参数
     let extendObj = extend ? JSON.parse(extend) : null;
-    let url = `http://149.88.87.18:6688/index.php/vod/show/area/{area}/by/{by}/class/{cateId}/id/${tid}/page/${pg}/year/{year}.html`;
+    let url = `http://1.95.79.193/index.php/vod/show/area/{area}/by/{by}/class/{cateId}/id/${tid}/page/${pg}/year/{year}.html`;
     // 替换 URL 中的占位符
     if (extendObj) {
       for (const [key, value] of Object.entries(extendObj)) {
@@ -1355,7 +1355,7 @@ if (isQuark) {
    //获取影视详情信息
   //获取影视详情信息
 async function detailContent(ids) {
-  const url = `http://149.88.87.18:6688${ids}`;
+  const url = `http://1.95.79.193${ids}`;
   try {
     //console.log(url);
     await toast('正在加载影片信息',2);

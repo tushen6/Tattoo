@@ -1269,7 +1269,7 @@ async function homeContent() {
 async function searchContent(keyword) {
     try {
         const encodedKeyword = encodeURIComponent(keyword);
-        const url = `https://www.mogg.top/index.php/vod/search.html?wd=${encodedKeyword}`;
+        const url = `http://123.666291.xyz/index.php/vod/search.html?wd=${encodedKeyword}`;
         const html = await 访问网页(url);
         const items = 文本_取中间_批量(html,'<div class="module-search-item">','<div class="video-info-footer">');
         const list = items.map((item) => {
@@ -1319,7 +1319,7 @@ async function categoryContent(tid, pg = 1, extend) {
   try {
     // 解析 extend 参数
     let extendObj = extend ? JSON.parse(extend) : null;
-    let url = `https://www.mogg.top/index.php/vod/show/area/{area}/class/{class}/by/{by}/id/${tid}/year/{year}/page/${pg}.html`;
+    let url = `http://123.666291.xyz/index.php/vod/show/area/{area}/class/{class}/by/{by}/id/${tid}/year/{year}/page/${pg}.html`;
     // 替换 URL 中的占位符
     if (extendObj) {
       for (const [key, value] of Object.entries(extendObj)) {
@@ -1375,7 +1375,7 @@ async function categoryContent(tid, pg = 1, extend) {
 
 //获取影视详情信息
 async function detailContent(ids) {
-  const url = `https://www.mogg.top${ids}`;
+  const url = `http://123.666291.xyz${ids}`;
   try {
     //console.log(url);
     const html = await 访问网页(url);

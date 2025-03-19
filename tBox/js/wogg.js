@@ -1329,7 +1329,7 @@ if (isQuark) {
    async function searchContent(keyword) {
        try {
            const encodedKeyword = encodeURIComponent(keyword);
-           const url = `https://wogg.xxooo.cf/vodsearch/-------------.html?wd=${encodedKeyword}`;
+           const url = `https://www.wogg.one/vodsearch/-------------.html?wd=${encodedKeyword}`;
            const html = await 访问网页(url);
            const items = 文本_取中间_批量(html,'<div class="module-search-item">','<div class="video-info-footer">');
            const list = items.map((item) => {
@@ -1379,7 +1379,7 @@ if (isQuark) {
      try {
        // 解析 extend 参数
        let extendObj = extend ? JSON.parse(extend) : null;
-       let url = `https://wogg.xxooo.cf/vodshow/${tid}-{area}-{by}-{cateId}-----${pg}---{year}.html`;
+       let url = `https://www.wogg.one/vodshow/${tid}-{area}-{by}-{cateId}-----${pg}---{year}.html`;
        // 替换 URL 中的占位符
        if (extendObj) {
          for (const [key, value] of Object.entries(extendObj)) {
@@ -1432,7 +1432,7 @@ if (isQuark) {
    
    //获取影视详情信息
    async function detailContent(ids) {
-     const url = `https://wogg.xxooo.cf${ids}`;
+     const url = `https://www.wogg.one${ids}`;
      try {
        //console.log(url);
        await toast('正在加载玩偶影片信息',2);
