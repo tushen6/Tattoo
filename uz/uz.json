@@ -10,9 +10,9 @@
     },
     {
       "name": "夸克|123|189|UC 网盘解析工具",
-      "version": 14,
+      "version": 17,
       "remark": "iOS14 以上版本可用,App v1.6.54 及以上版本可用",
-      "env": "UCCookie##用于播放UC网盘视频&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称&&123网盘账号##用于播放123网盘视频&&123网盘密码##用于播放123网盘视频&&天翼网盘账号##用于播放天翼网盘视频&&天翼网盘密码##用于播放天翼网盘视频",
+      "env": "UCCookie##用于播放UC网盘视频&&UC_UT##自动获取，不可用时点击删除再重启app&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称&&123网盘账号##用于播放123网盘视频&&123网盘密码##用于播放123网盘视频&&天翼网盘账号##用于播放天翼网盘视频&&天翼网盘密码##用于播放天翼网盘视频",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/panTools/js/panTools2.js",
       "type": 300
     }
@@ -41,6 +41,16 @@
             "remark": "f"
         }
     ],
+      "recommend": [
+    {
+      "name": "豆瓣推荐",
+      "version": 3,
+      "remark": "iOS14 以上版本可用",
+      "codeID": "N7WRmLmOdB8FSh4M",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/recommend/js/douban.txt",
+      "type": 200
+    }
+  ],
     "vod": [
    
     {
@@ -93,14 +103,7 @@
             "version": "3",
             "type": 101
         },
-        {
-            "name": "玩偶叔叔 | 4K",
-            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/玩偶叔叔.js",
-            "webSite": "https://woss.banye.tech:7086",
-            "remark": "数据来源于网络",
-            "version": "3",
-            "type": 101
-        },
+       
         {
             "name": "至臻 | 4K",
             "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/至臻.js",
@@ -165,16 +168,14 @@
             "version": "3",
             "type": 101
         },
-        {
-            "name": "云盘 | 4K",
-            "codeID": "",
-            "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/云盘.js",
-            "instance": "ypzyw",
-            "webSite": "https://res.yunpan.win",
-            "remark": "数据来源于网络",
-            "version": 1,
-            "type": 100
-        },
+       {
+      "name": "云盘资源网",
+      "version": 1,
+      "webSite": "https://res.yunpan.win",
+      "instance": "resYunPan20241120",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/resyunpan.js",
+      "type": 100
+    },
         {
             "name": "趣盘 | 4K",
             "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/tushen6/Tattoo/refs/heads/main/uz/js/趣盘.js",
@@ -185,12 +186,28 @@
             "version": "3",
             "type": 100
         },
+         {
+      "name": "金牌影视",
+      "version": 2,
+      "webSite": "https://www.ghw9zwp5.com",
+      "instance": "jpyy20240716",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/jpyy.js",
+      "type": 100
+    },
         {
       "name": "韩剧看看",
       "version": 2,
       "webSite": "https://www.hanjukankan.com",
       "instance": "hjkk20240624",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/hjkk.js",
+      "type": 100
+    },
+    {
+      "name": "烧火影视",
+      "version": 2,
+      "webSite": "https://saohuo.tv",
+      "instance": "saohuo20240623",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/saohuo.js",
       "type": 100
     },
     {
@@ -205,6 +222,14 @@
       "version": 1,
       "webSite": "https://www.clicli.pro",
       "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/clicli.js",
+      "type": 101
+    },
+     {
+      "name": "囧次元",
+      "version": 1,
+      "webSite": "http://yhhy.zshtys888.com",
+      "codeID": "KwdXRAgsew9EnmShYGEAl3nnHnhyDjgp",
+      "api": "https://github.moeyy.xyz/https://raw.githubusercontent.com/YYDS678/uzVideo-extensions/main/vod/js/jocy.js",
       "type": 101
     },
         {
