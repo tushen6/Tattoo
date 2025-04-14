@@ -2,7 +2,7 @@
 //const ucCookie='在设置中登录uc网盘';
 //const quarkCookie='在设置中登录夸克网盘';
 //代码中未分析阿里云盘，如有能力请自行完善
-//在app的下方弹出提示文字
+//在app的下方弹出提示文字哦
 
 async function toast(msg, seconds = 2) {
     await sendMessage('toast', JSON.stringify({ msg: msg, seconds: seconds }));

@@ -851,7 +851,7 @@ if (downloadUrl) {
  
  async function homeContent() {
    try {
-     const url = `http://milvdou.fun/`;
+     const url = `https://xiaomi.banye.tech:7086/`;
      const html2 = await 访问网页(url);
      const html = 文本_取中间(html2, "最新影片</h2>", "</html>");
      // 使用正则表达式匹配所有的电影项
@@ -923,7 +923,7 @@ if (downloadUrl) {
  async function searchContent(keyword) {
      try {
          const encodedKeyword = encodeURIComponent(keyword);
-         const url = `http://milvdou.fun/index.php/vod/search.html?wd=${encodedKeyword}`;
+         const url = `https://xiaomi.banye.tech:7086/index.php/vod/search.html?wd=${encodedKeyword}`;
          const html = await 访问网页(url);
          const items = 文本_取中间_批量(html,'<div class="module-search-item">','<div class="video-info-footer">');
          const list = items.map((item) => {
@@ -973,7 +973,7 @@ if (downloadUrl) {
    try {
      // 解析 extend 参数
      let extendObj = extend ? JSON.parse(extend) : null;
-     let url = `http://milvdou.fun/index.php/vod/show/id/${tid}/page/${pg}.html`;
+     let url = `https://xiaomi.banye.tech:7086/index.php/vod/show/id/${tid}/page/${pg}.html`;
      // 替换 URL 中的占位符
      if (extendObj) {
        for (const [key, value] of Object.entries(extendObj)) {
