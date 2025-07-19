@@ -1,7 +1,16 @@
 {
   "spider": "./duanju.jar",
   "sites": [
-    
+    {
+      "key": "✨PTT短剧✨",
+      "name": "✨PTT短剧✨",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./lib/PTT短剧.json"
+    },
     {
       "key": "py_偷乐短剧",
       "name": "✨偷乐短剧✨",
@@ -108,16 +117,7 @@
       "filterable": 1,
       "ext": "./lib/555短剧.json"
     },
-    {
-      "key": "✨PTT短剧✨",
-      "name": "✨PTT短剧✨",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "./lib/PTT短剧.json"
-    },
+    
     {
       "key": "✨七味短剧✨",
       "name": "✨七味短剧✨",
