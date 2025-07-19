@@ -1,5 +1,5 @@
 {
-  "spider": "./短剧.jar",
+  "spider": "./duanju.jar",
   "sites": [
     {
       "key": "py_蓝莓短剧",
