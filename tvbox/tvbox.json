@@ -1,15 +1,7 @@
 {
   "spider": "./duanju.jar",
   "sites": [
-    {
-      "key": "py_蓝莓短剧",
-      "name": "✨蓝莓短剧✨",
-      "type": 3,
-      "api": "./lib/py_蓝莓短剧.py",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0
-    },
+    
     {
       "key": "py_偷乐短剧",
       "name": "✨偷乐短剧✨",
