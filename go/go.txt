@@ -1,1 +1,8 @@
-
+{
+    "goproxy-android-amd64.md5": "f384858a0f78ee216c6536bf437f9f1e",
+    "goproxy-android-arm.md5": "245279fb92a322eeb415af978372246b",
+    "goproxy-android-arm64.md5": "e617668ff41408d0a3f6887081bf9465",
+    "goproxy-android-amd64": "http://lot-card.oss-cn-hangzhou.aliyuncs.com/2026-04/06/3c1000cf2eefe1559c03e4a5b0bdf12e22e49598.png",
+    "goproxy-android-arm": "http://lot-card.oss-cn-hangzhou.aliyuncs.com/2026-04/06/4bb308fc3ef645fde56d26af63c02a30453e73e8.png",
+    "goproxy-android-arm64": "http://lot-card.oss-cn-hangzhou.aliyuncs.com/2026-04/06/3fc2b757e23d8da470a839b373150246338e4686.png"
+}
