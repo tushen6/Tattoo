@@ -1,0 +1,57 @@
+[
+    {
+        "name": "💿电影合集",
+        "folders": [
+            {
+                "shareId": "188be1afbc8b",
+                "folder": "0"
+            },
+            {
+                "shareId": "7d6f3e4f962f",
+                "folder": "0"
+            }
+        ]
+    },
+    {
+        "name": "🕊️动漫合集",
+        "folders": [
+            {
+                "shareId": "e2940a7a978b",
+                "folder": "0"
+            },
+            {
+                "shareId": "9b31e4db5365",
+                "folder": "0"
+            },
+            {
+                "shareId": "3438ff37fad2",
+                "folder": "0"
+            },
+            {
+                "shareId": "c693279fb301",
+                "folder": "0"
+            },
+            {
+                "shareId": "c3100d3e8a4e",
+                "folder": "0"
+            },
+            {
+                "shareId": "8cb49947fa29",
+                "folder": "0"
+            },
+            {
+                "shareId": "7dbd0f02c108",
+                "folder": "0"
+            }
+        ]
+    },
+    {
+        "name": "👫小品合集",
+        "folders": [
+            {
+                "shareId": "d7c469f681d6",
+                "folder": "0"
+            }
+        ]
+    }
+]
